@@ -44,7 +44,7 @@
 		
 		try
 		{
-			ApprovalsUtil.doGetRequest('https://login.salesforce.com', 'some_cookie_value=true;');
+			ApprovalsUtil.doGetRequest(URL.getSalesforceBaseUrl().toExternalForm(), 'some_cookie_value=true;');
 		}
 		catch (Exception e)
 		{
@@ -56,10 +56,11 @@
 		
 		System.assert(ApprovalsUtil.getMatch('Hello world', 'w(.*)d', 1) == 'orl');
 		
-		System.assert(ApprovalsUtil.boundLower('This is a string', 'is') == ' is a string');
+		System.assertEquals(ApprovalsUtil.boundLower('This is a string', 'is') == ' is a string',true);
 		
-		System.assert(ApprovalsUtil.boundUpper('This is a string', 'a') == 'This is ');
+		System.assertEquals(ApprovalsUtil.boundUpper('This is a string', 'a') == 'This is ',true);
 		
 		System.assert(ApprovalsUtil.bound('This is a string', 'a', 'ing') == ' str');
+
 	}
 }
