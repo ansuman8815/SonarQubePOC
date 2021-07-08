@@ -32,7 +32,7 @@
 		
 		System.currentPageReference().getHeaders().put('Referer','http://www.google.com');
 		boolean b = ApprovalsUtil.isCSRF(ApexPages.currentPage());
-		
+		//comment
 		try
 		{
 			ApprovalsUtil.doGetRequest('https://login.salesforce.com', null);
