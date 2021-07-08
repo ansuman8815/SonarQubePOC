@@ -190,14 +190,7 @@ public class ApprovalsUtil
     
     public static string getGoogleMapsKey(){
     
-        /*string domain = ApprovalsUtil.getDomain();
         
-        if(domain == 'c.na1.visual.force.com'){
-            return 'ABQIAAAAg8vXS5j2GDyVng-4Fo2MqxQ75BL4SlgOt6kyUW2Dew0q0VzSVxTr7WOrMeTzgEuzTsEKROuvrlShxA';
-        }
-        else if (domain == 'proximitysearch.na6.visual.force.com'){
-            return 'ABQIAAAAg8vXS5j2GDyVng-4Fo2MqxSuYVD9BChwjlArfZVU7eONxkYGGRQ06dydxYxtnjVsgZcdEmiI5BpXAw';
-        }*/ 
         return 'ABQIAAAAg8vXS5j2GDyVng-4Fo2MqxSaxC92qWpvsfLMnPYt2YVHzVh2whQ53ukTDrrLbVTAu7MMf-TMeKufTA';
     }
 }
