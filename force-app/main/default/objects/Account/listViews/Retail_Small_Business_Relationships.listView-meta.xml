@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Retail_Small_Business_Relationships</fullName>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>LLC_BI__Doing_Business_As__c</columns>
+    <columns>ACCOUNT.TYPE</columns>
+    <columns>Retail_City__c</columns>
+    <columns>Retail_State_Province__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>ACCOUNT.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Account.LLC_BI__Business</value>
+    </filters>
+    <filters>
+        <field>ACCOUNT.TYPE</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Small Business Relationships</label>
+</ListView>

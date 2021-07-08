@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CSiDP__ID_Type__c</fullName>
+    <deprecated>false</deprecated>
+    <description>Indicates the type of identification that the non-individual borrower is providing for the institution&apos;s customer identification verification (CIV) form. This field is used by document preparation integrations.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Indicates the type of identification that the non-individual borrower is providing for the institution&apos;s customer identification verification (CIV) form.</inlineHelpText>
+    <label>ID Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Secretary of State</fullName>
+                <default>false</default>
+                <label>Secretary of State</label>
+            </value>
+            <value>
+                <fullName>Articles of Incorporation</fullName>
+                <default>false</default>
+                <label>Articles of Incorporation</label>
+            </value>
+            <value>
+                <fullName>Partnership Agreement</fullName>
+                <default>false</default>
+                <label>Partnership Agreement</label>
+            </value>
+            <value>
+                <fullName>Certificate of Existence</fullName>
+                <default>false</default>
+                <label>Certificate of Existence</label>
+            </value>
+            <value>
+                <fullName>Certificate of Partnership</fullName>
+                <default>false</default>
+                <label>Certificate of Partnership</label>
+            </value>
+            <value>
+                <fullName>Registration of Partnership</fullName>
+                <default>false</default>
+                <label>Registration of Partnership</label>
+            </value>
+            <value>
+                <fullName>Trust Agreement</fullName>
+                <default>false</default>
+                <label>Trust Agreement</label>
+            </value>
+            <value>
+                <fullName>IRS TIN Letter</fullName>
+                <default>false</default>
+                <label>IRS TIN Letter</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

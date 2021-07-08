@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Retail_ValidateBillingAdressSectionField</fullName>
+    <active>false</active>
+    <description>This validation rule has created to validate if &apos;Physical Address is the same as mailing address?&apos; check box field is unchecked then validate fields in Billing section is required</description>
+    <errorConditionFormula>AND( 
+      NOT(ISNEW()), 
+      TEXT(Type)=&apos;Business&apos;,
+       Retail_Physical_Address_is_the_same_mail__c=false, 
+   OR(
+    ISNULL(Retail_Billing_Street_Address__c ),
+    ISNULL( BillingCity),
+    ISBLANK( TEXT(Retail_Billing_State_Province__c )),
+    ISNULL( BillingPostalCode )
+   
+       
+) 
+)</errorConditionFormula>
+    <errorMessage>Please enter value in Billing Street Address, Billing City, Billing State/Province, Billing Zip/Postal Code</errorMessage>
+</ValidationRule>

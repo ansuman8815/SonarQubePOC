@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Relationship_Layout</fullName>
+    <fields>Name</fields>
+    <fields>Total_Relationship_Exposure__c</fields>
+    <fields>Retail_PrimaryContact__c</fields>
+    <fields>Retail_Private_Banking__c</fields>
+    <fields>OwnerId</fields>
+    <label>Relationship Layout</label>
+</CompactLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Billing_Address__c</fullName>
+    <externalId>false</externalId>
+    <formula>Retail_Street_Address__c &amp; &apos;, &apos; &amp;  Retail_City__c &amp; &apos;, &apos; &amp;  TEXT(Retail_State_Province__c) &amp; &apos;, &apos; &amp; Retail_Zip_Postal_Code__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Billing Address</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

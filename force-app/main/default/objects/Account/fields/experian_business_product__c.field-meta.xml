@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>experian_business_product__c</fullName>
+    <externalId>false</externalId>
+    <label>Experian Business Product</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Intelliscore</fullName>
+                <default>true</default>
+                <label>Intelliscore</label>
+            </value>
+            <value>
+                <fullName>PPRPro</fullName>
+                <default>false</default>
+                <label>Premier Profile</label>
+            </value>
+            <value>
+                <fullName>SBCS</fullName>
+                <default>false</default>
+                <label>SBCS</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

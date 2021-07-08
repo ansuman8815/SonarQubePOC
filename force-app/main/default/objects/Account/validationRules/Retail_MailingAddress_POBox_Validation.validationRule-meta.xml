@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Retail_MailingAddress_POBox_Validation</fullName>
+    <active>true</active>
+    <description>If physical address contains P.O. Box information then it will display the validation error message.</description>
+    <errorConditionFormula>AND(IF(AND(
+OR(CONTAINS( Upper(Retail_Street_Address__c),&quot;PO BOX&quot;),
+CONTAINS( Upper(Retail_Street_Address__c),&quot;P O BOX&quot;),
+CONTAINS(Upper(Retail_Street_Address__c),&quot;P.O. BOX&quot;),
+CONTAINS(Upper(Retail_Street_Address__c),&quot;P. O. Box&quot;),
+CONTAINS(Upper(Retail_Street_Address__c),&quot;P.O BOX&quot;), 
+CONTAINS(Upper(Retail_Street_Address__c),&quot;PO. BOX&quot;),
+CONTAINS(Upper(Retail_Street_Address__c),&quot;POST OFFICE BOX&quot;)), 
+ISCHANGED(Retail_Street_Address__c)),True, false) ,NOT($Setup.Retail_Bypass_Metadata__c.Retail_Validation_Rule__c)
+)</errorConditionFormula>
+    <errorMessage>Please enter a non P.O. Box physical address for this relationship.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>E_Signature_Account</fullName>
+    <description>This field set captures values leveraged by the middleware to faciliate E-Vaulting within the E-Signature process. The Account ID is part of this field set, which identifies the account for the document.</description>
+    <displayedFields>
+        <field>Id</field>
+        <isFieldManaged>false</isFieldManaged>
+        <isRequired>false</isRequired>
+    </displayedFields>
+    <label>E-Signature Account</label>
+</FieldSet>

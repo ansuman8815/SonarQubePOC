@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Retail_Physical_Address_is_the_same_mail__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This field is created to use for Customer Onboarding feature</description>
+    <externalId>false</externalId>
+    <label>Physical Address is the same as mailing</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Checkbox</type>
+</CustomField>

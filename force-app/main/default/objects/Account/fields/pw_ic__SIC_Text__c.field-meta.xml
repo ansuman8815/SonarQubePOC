@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>pw_ic__SIC_Text__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <formula>pw_ic__IndustryCodeLookup__r.pw_ic__Description__c</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>SIC Text</label>
+    <required>false</required>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

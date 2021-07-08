@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>LLC_BI__Region__c</fullName>
+    <deprecated>false</deprecated>
+    <description>This field is optional. It is populated by a user or a data integration. This field is used to segment Relationships or Accounts. The value provided must match one of the values in the Region list established for this organization.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Custom field to segment Accounts by Region</inlineHelpText>
+    <label>Region</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Capital</fullName>
+                <default>false</default>
+                <label>Capital</label>
+            </value>
+            <value>
+                <fullName>Central Mountain</fullName>
+                <default>false</default>
+                <label>Central Mountain</label>
+            </value>
+            <value>
+                <fullName>Charlotte</fullName>
+                <default>false</default>
+                <label>Charlotte</label>
+            </value>
+            <value>
+                <fullName>Eastern North Carolina</fullName>
+                <default>false</default>
+                <label>Eastern North Carolina</label>
+            </value>
+            <value>
+                <fullName>Northwest</fullName>
+                <default>false</default>
+                <label>Northwest</label>
+            </value>
+            <value>
+                <fullName>Cleveland</fullName>
+                <default>false</default>
+                <label>Cleveland</label>
+            </value>
+            <value>
+                <fullName>Mid-Atlantic</fullName>
+                <default>false</default>
+                <label>Mid-Atlantic</label>
+            </value>
+            <value>
+                <fullName>Raleigh-Durham</fullName>
+                <default>false</default>
+                <label>Raleigh-Durham</label>
+            </value>
+            <value>
+                <fullName>Piedmont Triad</fullName>
+                <default>false</default>
+                <label>Piedmont Triad</label>
+            </value>
+            <value>
+                <fullName>Pittsburgh</fullName>
+                <default>false</default>
+                <label>Pittsburgh</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
